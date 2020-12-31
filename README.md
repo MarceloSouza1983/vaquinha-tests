@@ -3,16 +3,11 @@ Projeto Base para Testes - .Net Core
 
 ## Digital Innovation One
 
-[Clique aqui para se inscrever na Digital Innovation One](https://digitalinnovation.one/sign-up?ref=H395IYS4Z6)  
+[Clique aqui para se inscrever na Digital Innovation One](https://digitalinnovation.one/sign-up?ref=EGNGVRGB0K)  
 
-## Eliézer Zarpelão
-[GitHub Timeline](https://elizarp.github.io/timeline/)  
-[Linkedin](http://br.linkedin.com/in/eliezerzarpelao)  
-[Github](https://github.com/elizarp) 
-
-## Marcos Freire
-[Linkedin](https://www.linkedin.com/in/marcos-freire-a73891125/)  
-[Github](https://github.com/marcosfreire) 
+## Marcelo Souza
+[Linkedin](https://www.linkedin.com/in/marcelo-souza-72924640/)
+[Github](https://github.com/MarceloSouza1983)
 
 ## Slides
 [Slides em PDF](TesteNetCore.pdf)

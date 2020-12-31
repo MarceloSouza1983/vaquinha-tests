@@ -31,11 +31,11 @@
                 <legend>Dados Pessoais</legend>
 
                 <div class="form-group">
-                    <input asp-for="DadosPessoais.Nome" placeholder="Nome Completo" class="form-control" />
+                    <input asp-for="DadosPessoais.Nome" id="nome" placeholder="Nome Completo" class="form-control" />
                 </div>
 
                 <div class="form-group">
-                    <input asp-for="DadosPessoais.Email" placeholder="Email" class="form-control" />
+                    <input asp-for="DadosPessoais.Email" id="email" placeholder="Email" class="form-control" />
                 </div>
 
                 <div class="form-group">
@@ -58,12 +58,12 @@
                 <div class="row">
                     <div class="col-md-9">
                         <div class="form-group">
-                            <input asp-for="EnderecoCobranca.TextoEndereco" maxlength="100" placeholder="Endereço" class="form-control small" />
+                            <input asp-for="EnderecoCobranca.TextoEndereco" id="endereco" maxlength="100" placeholder="Endereço" class="form-control small" />
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="form-group">
-                            <input asp-for="EnderecoCobranca.Numero" placeholder="Número" class="form-control small" />
+                            <input asp-for="EnderecoCobranca.Numero" id="numero" placeholder="Número" class="form-control small" />
                         </div>
                     </div>
                 </div>
@@ -71,12 +71,12 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="form-group">
-                            <input asp-for="EnderecoCobranca.Cidade" placeholder="Cidade" class="form-control small" />
+                            <input asp-for="EnderecoCobranca.Cidade" id="cidade" placeholder="Cidade" class="form-control small" />
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <input asp-for="EnderecoCobranca.Estado" placeholder="Estado" id="estado" class="form-control small" />
+                            <input asp-for="EnderecoCobranca.Estado" id="estado" placeholder="Estado" class="form-control small" />
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="form-group">
-                            <input asp-for="EnderecoCobranca.Complemento" placeholder="Complemento" class="form-control small" />
+                            <input asp-for="EnderecoCobranca.Complemento" id="complemento" placeholder="Complemento" class="form-control small" />
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
             <fieldset>
                 <legend>Dados para pagamento</legend>
                 <div class="form-group">
-                    <input asp-for="FormaPagamento.NomeTitular" placeholder="Nome do Titular" class="form-control" />
+                    <input asp-for="FormaPagamento.NomeTitular" id="titular" placeholder="Nome do Titular" class="form-control" />
                 </div>
 
                 <div class="form-group">

@@ -90,7 +90,7 @@ namespace Vaquinha.Unit.Tests.DomainTests
         public void Doacao_ValoresDoacaoMaiorLimite_DoacaoInvalida(double valorDoacao)
         {
             // Arrange
-            const bool EXCEDER_MAX_VALOR_DOACAO = true;
+            //const bool EXCEDER_MAX_VALOR_DOACAO = true;
             var doacao = _doacaoFixture.DoacaoValida(false, valorDoacao);
             doacao.AdicionarEnderecoCobranca(_enderecoFixture.EnderecoValido());
             doacao.AdicionarFormaPagamento(_cartaoCreditoFixture.CartaoCreditoValido());
@@ -164,6 +164,23 @@ namespace Vaquinha.Unit.Tests.DomainTests
 
             doacao.ErrorMessages.Should().Contain("Valor mínimo de doação é de R$ 5,00", because: "valor mínimo de doação nao foi atingido.");            
             doacao.ErrorMessages.Should().Contain("O campo Email é obrigatório.", because: "o campo Email não foi informado.");            
+        }
+
+        [Fact]
+        [Trait("Doacao", "Doacao_UsuarioAceitaPagarComTaxa_DoacaoValida")]
+        public void Doacao_UsuarioAceitaPagarComTaxa_DoacaoValida() {
+
+            // Arrange
+            var doacao = _doacaoFixture.DoacaoValida(false, 5, false, true);
+            doacao.AdicionarEnderecoCobranca(_enderecoFixture.EnderecoValido());
+            doacao.AdicionarFormaPagamento(_cartaoCreditoFixture.CartaoCreditoValido());
+
+            // Act
+            var valido = doacao.Valido();
+
+            // Assert
+            doacao.Valor.Should().Be(6, because: "Valor com taxa de 20%");
+            
         }
 
     }
